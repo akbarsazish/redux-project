@@ -8,7 +8,7 @@ const CartItem = ({id, title, price, image, amount}) => {
                 </Col>
                 <Col className="CardBody mt-4">
                 <h2> {title} </h2>
-                <h5> {price} </h5>
+                <h5> $ {price} </h5>
                 <Button color="primary"> remove </Button>
                 </Col>
                 <Col className="CardBody mt-3">
