@@ -1,5 +1,6 @@
 import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
+import { Button } from 'reactstrap';
 const CartContainer = () => {
   const {cartItems, amount, total} = useSelector((state) => state.cart);
   if(amount < 1){
@@ -18,7 +19,7 @@ const CartContainer = () => {
        <div className="footer">
          Total  <h1> {total} </h1>
 
-         <button className="clearButton" > Clear All </button>
+         <Button color="primary"> Clear All </Button>
        </div>
     </div>
     )
